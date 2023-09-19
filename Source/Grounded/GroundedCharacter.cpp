@@ -172,6 +172,11 @@ void AGroundedCharacter::OnFire()
 	if (FireSound != nullptr)
 	{
 		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+
+		auto FiringLocation = GetActorLocation();
+		{
+			FiringSoundLocation(FiringLocation);
+		}
 	}
 
 	// try and play a firing animation if specified
@@ -295,6 +300,6 @@ bool AGroundedCharacter::EnableTouchscreenMovement(class UInputComponent* Player
 		//PlayerInputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AGroundedCharacter::TouchUpdate);
 		return true;
 	}
-	
+
 	return false;
 }

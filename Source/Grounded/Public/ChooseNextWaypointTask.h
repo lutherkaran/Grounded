@@ -9,6 +9,9 @@
 /**
  *
  */
+
+class PatrollingGuard_CPP;
+
 UCLASS()
 class GROUNDED_API UChooseNextWaypointTask :public UBTTaskNode
 {
@@ -19,4 +22,7 @@ public:
 protected:
 	UPROPERTY(EditAnywhere, Category = "Blackboard")
 		struct FBlackboardKeySelector IndexKey;
+
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
+		struct FBlackboardKeySelector WaypointKey;
 };
