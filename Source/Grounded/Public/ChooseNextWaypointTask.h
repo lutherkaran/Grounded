@@ -9,9 +9,6 @@
 /**
  *
  */
-
-class PatrollingGuard_CPP;
-
 UCLASS()
 class GROUNDED_API UChooseNextWaypointTask :public UBTTaskNode
 {
