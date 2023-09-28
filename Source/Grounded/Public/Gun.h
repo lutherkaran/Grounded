@@ -48,8 +48,4 @@ public:
 
 	void OnFire();
 
-protected:
-
-	UFUNCTION(BlueprintImplementableEvent, Category = "Firing")
-		void FiringSoundLocation(FVector FiringLocation);
 };

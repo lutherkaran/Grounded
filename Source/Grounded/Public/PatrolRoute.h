@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "PatrolRoute.generated.h"
 
+// A "Rote Card" to help AI Choose their next Waypoint.
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class GROUNDED_API UPatrolRoute : public UActorComponent

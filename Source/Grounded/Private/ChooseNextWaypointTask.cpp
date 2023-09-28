@@ -11,6 +11,7 @@ EBTNodeResult::Type UChooseNextWaypointTask::ExecuteTask(UBehaviorTreeComponent&
 
 	auto AIOwner = OwnerComp.GetAIOwner();
 	auto ControlledPawn = AIOwner->GetPawn();
+
 	//auto PatrollingGuard = Cast<UPatrolRoute>(ControlledPawn);
 	auto PatrolRoute = ControlledPawn->FindComponentByClass<UPatrolRoute>();
 //	AIOwner->SetFocalPoint(OwnerComp.GetBlackboardComponent()->GetValueAsVector(IndexKey.SelectedKeyName));

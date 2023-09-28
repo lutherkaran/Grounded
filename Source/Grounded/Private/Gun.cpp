@@ -68,9 +68,6 @@ void AGun::OnFire()
 		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
 
 		auto FiringLocation = GetActorLocation();
-		{
-			FiringSoundLocation(FiringLocation);
-		}
 	}
 
 	// try and play a firing animation if specified
